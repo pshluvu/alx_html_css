@@ -1,22 +1,75 @@
 /* base.css */
+
+/* Reset some defaults */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: #f0f8ff; /* light blue background */
     color: #333;
 }
 
+/* Headings */
 h1, h2, h3 {
-    color: #222;
+    color: #004080; /* dark navy blue */
+    margin-top: 20px;
 }
 
+/* Links */
 a {
-    color: #0073e6;
+    color: #0073e6; /* blue links */
     text-decoration: none;
 }
 
 a:hover {
+    color: #ff6600; /* orange hover */
     text-decoration: underline;
+}
+
+/* Header navigation */
+header {
+    background-color: #004080;
+    padding: 10px;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+header a {
+    color: white;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+    background-color: #fff;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #0073e6;
+    color: white;
 }
